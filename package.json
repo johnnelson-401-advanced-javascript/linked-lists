@@ -1,0 +1,26 @@
+{
+  "name": "linked-lists",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "jest": "jest --runInBand --verbose",
+    "test": "npm run jest -- --coverage",
+    "test:watch": "npm run jest -- --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnelson-401-advanced-javascript/linked-lists.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnnelson-401-advanced-javascript/linked-lists/issues"
+  },
+  "homepage": "https://github.com/johnnelson-401-advanced-javascript/linked-lists#readme",
+  "dependencies": {
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0"
+  }
+}
