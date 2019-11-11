@@ -43,6 +43,16 @@ class LinkedList {
     }
     return false;
   }
+
+  toString() {
+    let current = this.head;
+    let result = [];
+    while(current) {
+      result.push(current.value);
+      current = current.next;
+    }
+    return result.join(', ');
+  }
 }
 
 module.exports = { Node, LinkedList };

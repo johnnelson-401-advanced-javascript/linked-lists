@@ -27,5 +27,14 @@ describe('LinkedList methods', () => {
 
   });
 
+  it('Returns the List as a String', () => {
+    const list = new LinkedList;
+    list.append('Test');
+    list.append('strings');
+    list.append(42);
+    expect(list.toString()).toEqual('Test, strings, 42');
+    
+  });
+
 
 });
