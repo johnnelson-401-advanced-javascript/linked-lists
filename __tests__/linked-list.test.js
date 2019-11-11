@@ -6,8 +6,6 @@ describe('LinkedList methods', () => {
     linkedList.append(1);
     linkedList.append(2);
     linkedList.append(3);
-    console.log(linkedList.head);
-
     expect(linkedList.tail.value).toEqual(3);
   });
 
@@ -17,7 +15,6 @@ describe('LinkedList methods', () => {
     list.prepend(2);
     list.prepend(1);
     expect(list.head.value).toEqual(1);
-
   });
 
 
