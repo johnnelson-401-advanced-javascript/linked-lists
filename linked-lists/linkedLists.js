@@ -32,6 +32,17 @@ class LinkedList {
       this.head.next = oldHead;
     }
   }
+  includes(value) {
+    let current = this.head;
+    while(current) {
+      if(current.value === value) {
+        return true;
+      } else {
+        current = current.next;
+      }
+    }
+    return false;
+  }
 }
 
 module.exports = { Node, LinkedList };

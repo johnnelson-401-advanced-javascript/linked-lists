@@ -17,5 +17,15 @@ describe('LinkedList methods', () => {
     expect(list.head.value).toEqual(1);
   });
 
+  it('Includes returns true if the value is in the List, otherwise False', () => {
+    const list = new LinkedList;
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    expect(list.includes(1)).toBe(true);
+    expect(list.includes(42)).toBe(false);
+
+  });
+
 
 });
