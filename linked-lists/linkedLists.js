@@ -21,7 +21,7 @@ class LinkedList {
       this.tail.prev = oldTail;
     }
   }
-  
+
   prepend(value) {
     if(!this.head) {
       this.head = this.tail = new Node(value);
@@ -55,23 +55,30 @@ class LinkedList {
   }
 
   insertBefore(value, newVal) {
+    if(this.includes(value) === false){
+      return console.error('Value does not Exist');
+    }
     let current = this.head;
     let previous;
     while(current.value !== value) {
       previous = current;
       current = current.next;
     }
-    const newNode = new Node (newVal, current);
+    const newNode = new Node(newVal, current);
     previous.next = newNode;
   }
   insertAfter(value, newVal) {
+    if(this.includes(value) === false){
+      return console.error('Value does not Exist');
+    }
     let current = this.head;
     while(current.value !== value) {
       current = current.next;
     }
     let next = current.next;
-    const newNode = new Node (newVal, next);
+    const newNode = new Node(newVal, next);
     current.next = newNode;
+    
   }
 
 
