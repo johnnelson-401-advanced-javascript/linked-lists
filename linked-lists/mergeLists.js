@@ -18,4 +18,4 @@ function mergeList(l1, l2) {
   return result;
 }
 
-module.exports = mergeList;
+module.exports = { mergeList };
