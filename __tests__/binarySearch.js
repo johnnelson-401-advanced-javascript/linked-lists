@@ -7,10 +7,6 @@ describe('Binary Search method', () => {
     expect(binarySearch(arr, 15)).toEqual(2);
     let arr2 = [11, 22, 33, 44, 55, 66, 77];
     expect(binarySearch(arr2, 90)).toEqual(-1);
-
-
-
-    
   });
   
 });
