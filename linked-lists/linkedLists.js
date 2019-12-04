@@ -56,7 +56,7 @@ class LinkedList {
 
   insertBefore(value, newVal) {
     if(this.includes(value) === false){
-      return console.error('Value does not Exist');
+      throw new Error('Value does not Exist');
     }
     let current = this.head;
     let previous;
@@ -69,7 +69,7 @@ class LinkedList {
   }
   insertAfter(value, newVal) {
     if(this.includes(value) === false){
-      return console.error('Value does not Exist');
+      throw new Error('Value does not Exist');
     }
     let current = this.head;
     while(current.value !== value) {

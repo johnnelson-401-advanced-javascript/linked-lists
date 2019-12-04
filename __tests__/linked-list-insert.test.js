@@ -17,7 +17,7 @@ describe('insert tests', () => {
     list.append(3);
     list.append(2);
     list.append('x');
-    expect(list.insertBefore(4, 5)).toBe(console.error('Value does not Exist'));
+    expect(()=>{list.insertBefore(4, 5);}).toThrow();
   });
 
   it('insertAfter, adds newVal to next of Value', () => {
@@ -36,7 +36,7 @@ describe('insert tests', () => {
     list.append(3);
     list.append(2);
     list.append('x');
-    expect(list.insertAfter(4, 5)).toBe(console.error('Value does not Exist'));
+    expect(()=>{list.insertAfter(4, 5);}).toThrow();
   });
 
   
